@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>main {padding-right: 80px;}</style>
+</head>
+<body>
+    <aside></aside>
+
+    <header></header>
+    
+    <main>
+        <p>Basic</p>
+        <hr>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Hover</button>
+            <div uk-drop>
+                <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+            </div>
+        </div>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Click</button>
+            <div uk-drop="mode: click">
+                <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+            </div>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Multi-columns</p>
+        <hr>
+        <button class="uk-button uk-button-default" type="button">Hover</button>
+        <div class="uk-width-large" uk-drop>
+            <div class="uk-card uk-card-body uk-card-default">
+                <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Directions</p>
+        <hr>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Right Center</button>
+            <div uk-drop="pos: right-center">
+                <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+            </div>
+        </div>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Bottom Justify</button>
+            <div uk-drop="pos: bottom-justify">
+                <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+            </div>
+        </div>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Top Right</button>
+            <div uk-drop="pos: top-right">
+                <div class="uk-card uk-card-body uk-card-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

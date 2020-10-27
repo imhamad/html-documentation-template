@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <style>main {padding-right: 80px;}</style>
+</head>
+<body>
+    <aside></aside>
+
+    <header></header>
+    
+    <main>
+        <div id="editor">
+            <h1>Hello World!</h1>
+            <br />
+            <p>Some initial <strong>bold</strong> text</p>
+            <br>
+            <ul>
+                <li>What is Lorem Ipsum?</li>
+                <li>Why do we use it?</li>
+                <li>Where does it come from?</li>
+                <li>Where can I get some?</li>
+            </ul>
+            <p><br></p>
+        </div>
+    </main>
+    
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script>
+        window.onload = () => {
+            var quill = new Quill('#editor', {
+                theme: 'snow'
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>main {padding: 40px 80px 100px;}</style>
+</head>
+<body>
+    <aside></aside>
+
+    <header></header>
+    
+    <main>
+        <p>Basic</p>
+        <hr>
+        <p uk-margin>
+            <a class="uk-button uk-button-default" href="#">Link</a>
+            <button class="uk-button uk-button-default">Button</button>
+            <button class="uk-button uk-button-default" disabled>Disabled</button>
+        </p>
+        
+        <div class="uk-margin-large-top"></div>
+        
+        <p>Flavors</p>
+        <hr>
+        <p uk-margin>
+            <button class="uk-button uk-button-default">Default</button>
+            <button class="uk-button uk-button-primary">Primary</button>
+            <button class="uk-button uk-button-secondary">Secondary</button>
+            <button class="uk-button uk-button-danger">Danger</button>
+            <button class="uk-button uk-button-text">Text</button>
+            <button class="uk-button uk-button-link">Link</button>
+        </p>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Sizes</p>
+        <hr>
+        <p uk-margin>
+            <button class="uk-button uk-button-default uk-button-small">Small button</button>
+            <button class="uk-button uk-button-primary uk-button-small">Small button</button>
+            <button class="uk-button uk-button-secondary uk-button-small">Small button</button>
+        </p>
+    
+        <p uk-margin>
+            <button class="uk-button uk-button-default uk-button-large">Large button</button>
+            <button class="uk-button uk-button-primary uk-button-large">Large button</button>
+            <button class="uk-button uk-button-secondary uk-button-large">Large button</button>
+        </p>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Group</p>
+        <hr>
+        <div>
+            <div class="uk-button-group">
+                <button class="uk-button uk-button-secondary">Button</button>
+                <button class="uk-button uk-button-secondary">Button</button>
+                <button class="uk-button uk-button-secondary">Button</button>
+            </div>
+        </div>
+    
+        <div class="uk-margin-small">
+            <div class="uk-button-group">
+                <button class="uk-button uk-button-primary">Button</button>
+                <button class="uk-button uk-button-primary">Button</button>
+                <button class="uk-button uk-button-primary">Button</button>
+            </div>
+        </div>
+    
+        <div>
+            <div class="uk-button-group">
+                <button class="uk-button uk-button-danger">Button</button>
+                <button class="uk-button uk-button-danger">Button</button>
+                <button class="uk-button uk-button-danger">Button</button>
+            </div>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Dropdowns</p>
+        <hr>
+
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Dropdown Basic</button>
+            <div uk-dropdown>
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="uk-button-group">
+            <button class="uk-button uk-button-default">Dropdown Group</button>
+            <div class="uk-inline">
+                <button class="uk-button uk-button-default" type="button"><span uk-icon="icon:    triangle-down"></span></button>
+                <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

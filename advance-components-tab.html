@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>main {padding-right: 80px;}</style>
+</head>
+<body>
+    <aside></aside>
+
+    <header></header>
+    
+    <main>
+        <p>Basic</p>
+        <hr>
+        <ul uk-tab>
+            <li class="uk-active"><a href="#">Left</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-disabled"><a>Disabled</a></li>
+        </ul>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Bottom</p>
+        <hr>
+        <ul class="uk-tab-bottom" uk-tab>
+            <li class="uk-active"><a href="#">Left</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Left</p>
+        <hr>
+        <div class="uk-child-width-1-2@s" uk-grid>
+            <div>
+                <ul class="uk-tab-left" uk-tab>
+                    <li class="uk-active"><a href="#">Left</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        
+            <div>
+                <ul class="uk-tab-right" uk-tab>
+                    <li class="uk-active"><a href="#">Right</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Alignments</p>
+        <hr>
+        <div class="uk-margin-medium-top">
+            <ul class="uk-flex-center" uk-tab>
+                <li class="uk-active"><a href="#">Center</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="uk-flex-right" uk-tab>
+                <li class="uk-active"><a href="#">Right</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="uk-child-width-expand" uk-tab>
+                <li class="uk-active"><a href="#">Justify</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Tabs and dropdown</p>
+        <hr>
+        <ul uk-tab>
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li>
+                <a href="#">More <span class="uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
+                <div uk-dropdown="mode: click">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </main>
+    
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

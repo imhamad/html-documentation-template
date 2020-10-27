@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>main {padding-right: 80px;}</style>
+</head>
+<body>
+    <aside></aside>
+
+    <header></header>
+    
+    <main>
+        <p>Basic</p>
+        <hr>
+        <ul uk-accordion>
+            <li class="uk-open">
+                <a class="uk-accordion-title" href="#">Item 1</a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Item 2</a>
+                <div class="uk-accordion-content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Item 3</a>
+                <div class="uk-accordion-content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>No collapsing</p>
+        <hr>
+        <ul uk-accordion="collapsible: false">
+            <li>
+                <a class="uk-accordion-title" href="#">Item 1</a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Item 2</a>
+                <div class="uk-accordion-content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Item 3</a>
+                <div class="uk-accordion-content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Multiple open items</p>
+        <hr>
+        <ul uk-accordion="multiple: true">
+            <li class="uk-open">
+                <a class="uk-accordion-title" href="#">Item 1</a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Item 2</a>
+                <div class="uk-accordion-content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Item 3</a>
+                <div class="uk-accordion-content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

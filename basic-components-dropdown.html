@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>main {padding-right: 80px;}</style>
+</head>
+<body>
+    <aside></aside>
+
+    <header></header>
+    
+    <main>
+        <p>Basic</p>
+        <hr>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Hover</button>
+            <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        </div>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Click</button>
+            <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Advance</p>
+        <hr>
+        <button class="uk-button uk-button-default" type="button">Hover</button>
+        <div uk-dropdown>
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Multi-column</p>
+        <hr>
+        <button class="uk-button uk-button-default" type="button">Hover</button>
+        <div class="uk-width-large" uk-dropdown>
+            <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Opening directions</p>
+        <hr>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Top Right</button>
+            <div uk-dropdown="pos: top-right">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Bottom Justify</button>
+            <div uk-dropdown="pos: bottom-justify">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Right Center</button>
+            <div uk-dropdown="pos: right-center">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Animation</p>
+        <hr>
+        <button class="uk-button uk-button-default" type="button">Hover</button>
+        <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+
+        <div class="uk-margin-large-top"></div>
+    </main>
+    
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

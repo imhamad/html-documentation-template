@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>main {padding-right: 80px;}</style>
+</head>
+<body>
+    <aside></aside>
+
+    <header></header>
+
+    <main>
+        <p>Basic</p>
+        <hr>
+        <form>
+            <fieldset class="uk-fieldset">
+                <legend class="uk-legend">Title</legend>
+                <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Input">
+                </div>
+                <div class="uk-margin">
+                    <select class="uk-select">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                    </select>
+                </div>
+                <div class="uk-margin">
+                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                </div>
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
+                    <label><input class="uk-radio" type="radio" name="radio2"> B</label>
+                </div>
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <label><input class="uk-checkbox" type="checkbox" checked> A</label>
+                    <label><input class="uk-checkbox" type="checkbox"> B</label>
+                </div>
+                <div class="uk-margin">
+                    <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Icons</p>
+        <hr>
+        <form>
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input class="uk-input" type="text">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                    <input class="uk-input" type="text">
+                </div>
+            </div>
+        </form>
+        
+        <div class="uk-margin-large-top"></div>
+
+        <p>State</p>
+        <hr>
+        <form>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-danger uk-form-width-medium" type="text" placeholder="form-danger" value="form-danger">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-success uk-form-width-medium" type="text" placeholder="form-success" value="form-success">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="disabled" value="disabled" disabled>
+            </div>
+        </form>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Size</p>
+        <hr>
+        <form>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-medium uk-form-large" type="text" placeholder="Large">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="Default">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-medium uk-form-small" type="text" placeholder="Small">
+            </div>
+        </form>
+        
+        <div class="uk-margin-large-top"></div>
+
+        <p>Width</p>
+        <hr>
+        <form>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-large" type="text" placeholder="Large">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="Medium">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-small" type="text" placeholder="Small">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input uk-form-width-xsmall" type="text" placeholder="X-Small">
+            </div>
+        </form>
+        
+        <div class="uk-margin-large-top"></div>
+
+        <p>Labels</p>
+        <hr>
+        <form class="uk-form-stacked">
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-text">Text</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">Select</label>
+                <div class="uk-form-controls">
+                    <select class="uk-select" id="form-stacked-select">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                    </select>
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-form-label">Radio</div>
+                <div class="uk-form-controls">
+                    <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
+                    <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+                </div>
+            </div>
+        </form>
+        
+        <div class="uk-margin-large-top"></div>
+
+        <p>Inline labels</p>
+        <hr>
+        <form class="uk-form-horizontal uk-margin-large">
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-horizontal-text">Text</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Some text...">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-horizontal-select">Select</label>
+                <div class="uk-form-controls">
+                    <select class="uk-select" id="form-horizontal-select">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                    </select>
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-form-label">Radio</div>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
+                    <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+                </div>
+            </div>
+        </form>
+    </main>
+    
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

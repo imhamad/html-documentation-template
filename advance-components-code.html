@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>main {padding-right: 80px;}</style>
+</head>
+<body>
+    <aside></aside>
+
+    <header></header>
+    
+    <main>
+        <p>HTML Code</p>
+        <hr />
+        <pre><code class="html">
+        &lt;ul class="nav-sub"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Change Color&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Use Component&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;How Search Works&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Empty Page&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        </code></pre>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Javascript Code</p>
+        <hr />
+        <pre><code class="javascript">
+        // JavaScript program to find the area of a triangle
+
+        let side1 = prompt('Enter side1: ');
+        let side2 = prompt('Enter side2: ');
+        let side3 = prompt('Enter side3: ');
+        
+        // calculate the semi-perimeter
+        let s = (side1 + side2 + side3) / 2;
+        
+        //calculate the area
+        let areaValue = Math.sqrt(
+            s * (s - side1) * (s - side2) * (s - side3)
+        );
+        
+        console.log(
+            `The area of the triangle is ${areaValue}`
+        );
+        </code></pre>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Python Code</p>
+        <hr />
+        <pre><code class="python">
+        # Python program to swap two variables
+
+        x = 5
+        y = 10
+        
+        # To take inputs from the user
+        #x = input('Enter value of x: ')
+        #y = input('Enter value of y: ')
+        
+        # create a temporary variable and swap the values
+        temp = x
+        x = y
+        y = temp
+        
+        print('The value of x after swapping: {}'.format(x))
+        print('The value of y after swapping: {}'.format(y))
+        </code></pre>
+
+        <div class="uk-margin-large-top"></div>
+
+        <p>Kotlin Code</p>
+        <hr />
+        <pre><code class="kotlin">
+
+        import java.util.ArrayList
+        fun main(args: Array<String>) {
+            val list1 = ArrayList<String>()
+            list1.add("a")
+        
+            val list2 = ArrayList<String>()
+            list2.add("b")
+        
+            val joined = ArrayList<String>()
+        
+            joined.addAll(list1)
+            joined.addAll(list2)
+        
+            println("list1: $list1")
+            println("list2: $list2")
+            println("joined: $joined")
+        }            
+        </code></pre>
+
+        
+    </main>
+    
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
