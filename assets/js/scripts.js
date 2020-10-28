@@ -1,3 +1,4 @@
+const assetsRoot = '';
 const initGsap = (cb = null) => {
     if (window.gsap && cb) {
         return cb(window.gsap);
@@ -75,11 +76,14 @@ const scrollspyCloseHandler = async () => {
 (function() {
     const script = document.createElement('script');
     const link = document.createElement('link');
+    const link2 = document.createElement('link');
     const loader = document.createElement('div');
 
-    script.src = '/assets/js/bundle.min.js';
-    link.href = '/assets/css/style.css';
+    script.src = `${assetsRoot}/assets/js/bundle.min.js`;
+    link.href = `${assetsRoot}/assets/css/style.css`;
     link.rel = 'stylesheet';
+    link2.href = `${assetsRoot}/assets/css/bundle.min.css`;
+    link2.rel = 'stylesheet';
 
     script.onload = () => {
         initGsap();
@@ -130,6 +134,7 @@ const scrollspyCloseHandler = async () => {
     
     loader.className = 'page-loader';
     document.body.append(loader);
+    document.body.append(link2);
     document.body.append(link);
     document.body.append(script);
 })()
