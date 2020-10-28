@@ -55,13 +55,17 @@ main {
     padding: 50px 80px;
     overflow-y: scroll;
     height: calc(100vh - 70px);
-    padding-right: 350px;
+    padding-right: 80px
 }
 
 main > p, .normal-text p {
     color: #0e1e25de;
     font-size: var(--font-size-lg);
     line-height: 1.67;
+}
+
+.scrollspy + main {
+    padding-right: 350px;
 }
 
 .page-loader {
@@ -267,6 +271,7 @@ aside .color-box {
     top: 130px;
     max-height: calc(100vh - 150px);
     overflow: scroll;
+    z-index: 1002;
 }
 
 .scrollspy .uk-nav > .spy-item > a {
@@ -297,6 +302,7 @@ aside .color-box {
     padding-bottom: 15px;
     display: none;
     cursor: pointer;
+    z-index: 1002;
 }
 
 header {
@@ -556,6 +562,9 @@ aside.dark {
         left: 300px;
         padding: 40px 80px;
         width: calc(100% - 300px);
+    }
+
+    .scrollspy + main {
         padding-right: 300px;
     }
 
@@ -584,6 +593,9 @@ aside.dark {
         left: 0;
         padding: 30px 40px;
         width: 100%;
+    }
+
+    .scrollspy + main {
         padding-right: 290px;
     }
 
@@ -638,6 +650,10 @@ aside.dark {
         padding-right: 40px;
     }
 
+    .scrollspy + main {
+        padding-right: 40px;
+    }
+
     .menu-btn-scrollspy {
         display: block;
     }
@@ -650,6 +666,10 @@ aside.dark {
 
 @media all and (max-width: 450px) {
     main {
+        padding: 10px 20px;
+    }
+
+    .scrollspy + main {
         padding: 10px 20px;
     }
 

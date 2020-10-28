@@ -266,6 +266,63 @@
     </aside>
     <!-- Left sidebar ended -->
 
+    <!-- Button for right sidebar, visible on small screens only -->
+    <div class="menu-btn-scrollspy">
+        Links on this page
+    </div>
+
+    <section class="scrollspy">
+        <!-- <h5>Links on this page</h5> -->
+        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+            <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li>
+            <li class="spy-item"><a href="#article-1">What is Lorem Ipsum?</a></li>
+            <li class="spy-item"><a href="#article-2">Why do we use it?</a></li>
+            <li class="spy-item"><a href="#article-3">Where does it come from?</a></li>
+            <li class="spy-item"><a href="#article-4">Where can I get some?</a></li>
+            <li class="spy-item"><a href="#article-5">How can I get it?</a></li>
+            <li class="spy-item"><a href="#article-6">Finally I got it!</a></li>
+            
+            <li style="margin-top: 50px;"></li>
+
+            <!-- Right sidebar bottom icons started -->
+            <li>
+                <a href="#">
+                    <span uk-icon="warning" class="uk-margin-small-right"></span> 
+                    <span class="uk-text-middle">Report issue</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span uk-icon="commenting" class="uk-margin-small-right uk-icon"></span>
+                    <span class="uk-text-middle">Get help</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span uk-icon="pencil" class="uk-margin-small-right uk-icon"></span>
+                    <span class="uk-text-middle">Edit this page</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span uk-icon="push" class="uk-margin-small-right uk-icon"></span>
+                    <span class="uk-text-middle">Order a feature</span>
+                </a>
+            </li>
+            <li class="uk-nav-divider"></li>
+            <li><a>Was this page helpful?</a></li>
+            <li>
+                <a href="#" style="display: inline;">
+                    <img src="./assets/img/thumbs-up.svg" style="width: 42px"/>
+                </a>
+                <a href="#" style="display: inline;">
+                    <img src="./assets/img/thumbs-down.svg" style="width: 42px"/>
+                </a>
+            </li>
+            <!-- Right sidebar bottom icons ended -->
+        </ul>
+    </section>
+
     <main>
         <!-- Heading Article -->
         <h1 id="heading"><a href="#heading">Lorem Ipsum</a></h1>
@@ -445,63 +502,6 @@
         </div>
         <!-- Next and Prvious navigation ended -->
     </main>
-
-    <!-- Button for right sidebar, visible on small screens only -->
-    <div class="menu-btn-scrollspy">
-        Links on this page
-    </div>
-
-    <section class="scrollspy">
-        <!-- <h5>Links on this page</h5> -->
-        <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
-            <li class="spy-item"><a href="#heading">Lorem Ipsum</a></li>
-            <li class="spy-item"><a href="#article-1">What is Lorem Ipsum?</a></li>
-            <li class="spy-item"><a href="#article-2">Why do we use it?</a></li>
-            <li class="spy-item"><a href="#article-3">Where does it come from?</a></li>
-            <li class="spy-item"><a href="#article-4">Where can I get some?</a></li>
-            <li class="spy-item"><a href="#article-5">How can I get it?</a></li>
-            <li class="spy-item"><a href="#article-6">Finally I got it!</a></li>
-            
-            <li style="margin-top: 50px;"></li>
-
-            <!-- Right sidebar bottom icons started -->
-            <li>
-                <a href="#">
-                    <span uk-icon="warning" class="uk-margin-small-right"></span> 
-                    <span class="uk-text-middle">Report issue</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span uk-icon="commenting" class="uk-margin-small-right uk-icon"></span>
-                    <span class="uk-text-middle">Get help</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span uk-icon="pencil" class="uk-margin-small-right uk-icon"></span>
-                    <span class="uk-text-middle">Edit this page</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span uk-icon="push" class="uk-margin-small-right uk-icon"></span>
-                    <span class="uk-text-middle">Order a feature</span>
-                </a>
-            </li>
-            <li class="uk-nav-divider"></li>
-            <li><a>Was this page helpful?</a></li>
-            <li>
-                <a href="#" style="display: inline;">
-                    <img src="./assets/img/thumbs-up.svg" style="width: 42px"/>
-                </a>
-                <a href="#" style="display: inline;">
-                    <img src="./assets/img/thumbs-down.svg" style="width: 42px"/>
-                </a>
-            </li>
-            <!-- Right sidebar bottom icons ended -->
-        </ul>
-    </section>
 
     <script src="./assets/js/scripts.js"></script>
     <style>

@@ -1,4 +1,4 @@
-const assetsRoot = '';
+const assetsRootUrl = '/assets';
 const initGsap = (cb = null) => {
     if (window.gsap && cb) {
         return cb(window.gsap);
@@ -79,10 +79,10 @@ const scrollspyCloseHandler = async () => {
     const link2 = document.createElement('link');
     const loader = document.createElement('div');
 
-    script.src = `${assetsRoot}/assets/js/bundle.min.js`;
-    link.href = `${assetsRoot}/assets/css/style.css`;
+    script.src = `${assetsRootUrl}/js/bundle.min.js`;
+    link.href = `${assetsRootUrl}/css/style.css`;
     link.rel = 'stylesheet';
-    link2.href = `${assetsRoot}/assets/css/bundle.min.css`;
+    link2.href = `${assetsRootUrl}/css/bundle.min.css`;
     link2.rel = 'stylesheet';
 
     script.onload = () => {
