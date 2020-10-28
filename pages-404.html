@@ -190,8 +190,8 @@
                         <li><a href="pages-faq.html">FAQ Page</a></li>
                         <li><a href="pages-single-page.html">Single Page</a></li>
                         <li><a href="pages-api-page.html">API Page</a></li>
-                        <li><a href="pages-404.html">404 Page</a></li>
-                        <li class="uk-active"><a href="pages-articles.html">Articles Page</a></li>
+                        <li class="uk-active"><a href="pages-404.html">404 Page</a></li>
+                        <li><a href="pages-articles.html">Articles Page</a></li>
                         <li><a href="pages-comments.html">Comments Page</a></li>
                     </ul>
                 </li>
@@ -274,61 +274,21 @@
     <!-- Left sidebar ended -->
     
     <main>
-        <article class="uk-article">
-            <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ut enim ad minim</a></h1>
-            <p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a href="#">Blog</a></p>
-            <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="uk-grid-small uk-child-width-auto" uk-grid>
-                <div>
-                    <a class="uk-button uk-button-text" href="#">Read more</a>
-                </div>
-                <div>
-                    <a class="uk-button uk-button-text" href="#">5 Comments</a>
-                </div>
-            </div>
-        </article>
-        <article class="uk-article">
-            <h1 class="uk-article-title"><a class="uk-link-reset" href="">Sed do eiusmod tempor</a></h1>
-            <p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a href="#">Blog</a></p>
-            <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="uk-grid-small uk-child-width-auto" uk-grid>
-                <div>
-                    <a class="uk-button uk-button-text" href="#">Read more</a>
-                </div>
-                <div>
-                    <a class="uk-button uk-button-text" href="#">5 Comments</a>
-                </div>
-            </div>
-        </article>
-        <article class="uk-article">
-            <h1 class="uk-article-title"><a class="uk-link-reset" href="">Exercitation ullamco laboris</a></h1>
-            <p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a href="#">Blog</a></p>
-            <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="uk-grid-small uk-child-width-auto" uk-grid>
-                <div>
-                    <a class="uk-button uk-button-text" href="#">Read more</a>
-                </div>
-                <div>
-                    <a class="uk-button uk-button-text" href="#">5 Comments</a>
-                </div>
-            </div>
-        </article>
-        <ul class="uk-pagination uk-flex-center" uk-margin>
-            <li><a href="#"><span uk-pagination-previous></span></a></li>
-            <li><a href="#">1</a></li>
-            <li class="uk-disabled"><span>...</span></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li class="uk-active"><span>7</span></li>
-            <li><a href="#">8</a></li>
-            <li><a href="#"><span uk-pagination-next></span></a></li>
-        </ul>
+        <div>
+            <img src="./assets/img/404.svg"/>
+            <h1 class="title">Page Not Found</h1>
+        </div>
     </main>
     
     <script src="./assets/js/scripts.js"></script>
-    <style>main {padding-right: 80px;}</style>
+    <style>
+        main {padding-right: 80px;}
+        main div {display: flex; flex-direction: column;align-items: center;}
+        main img {max-width: 800px; width: 100%}
+        .title {font-size: 70px;}
+        @media all and (max-width: 600px) {
+            .title {font-size: 30px;}
+        }
+    </style>
 </body>
 </html>

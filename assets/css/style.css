@@ -414,6 +414,55 @@ pre {
     font-size: var(--font-size-xs);
 }
 
+.path {
+    margin-bottom: 60px;
+}
+
+.path .path-url .root {
+    margin-left: 10px;
+}
+
+.path .path-url .link {
+    color: #10b3d6;
+}
+
+.path .keyword {
+    color: #7ec699;
+}
+
+.path .gray {
+    color: #847d7d;
+}
+
+.path .red {
+    color: #f44336;
+}
+
+.path table {
+    border: 1px solid #dbe1e4;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.path table tr td:first-of-type {
+    width: 150px;
+}
+
+.path table tr td:first-of-type span {
+    font-size: 14px;
+}
+
+.path .path-url a {
+    float: right;
+    text-decoration: none;
+    color: var(--color-base);
+}
+
+.path div > p {
+    margin-bottom: 0;
+    
+}
+
 .btn-left-menu {
     display: none;
     margin-right: 40px;
