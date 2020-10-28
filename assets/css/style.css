@@ -60,10 +60,22 @@ main {
     padding-right: 350px;
 }
 
-main > p {
+main > p, .normal-text p {
     color: #0e1e25de;
     font-size: var(--font-size-lg);
     line-height: 1.67;
+}
+
+.page-loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--color-base);
+    z-index: 1001;
+    background-image: url(../img/loader.svg);
+    background-repeat: no-repeat;
+    background-size: 40% 40%;
+    background-position: center center;
 }
 
 aside {
@@ -205,6 +217,7 @@ aside .uk-nav .uk-parent > a::after {
     width: 14px;
     height: 14px;
     float: right;
+    margin-top: 8px;
 }
 
 aside .uk-nav .uk-parent.uk-open > a::after {
@@ -213,6 +226,7 @@ aside .uk-nav .uk-parent.uk-open > a::after {
     height: 12px;
     float: right;
     margin-right: 3px;
+    margin-top: 8px;
 }
 
 aside .uk-nav .uk-nav-sub .uk-parent > a::after {
@@ -222,6 +236,7 @@ aside .uk-nav .uk-nav-sub .uk-parent > a::after {
     height: 12px;
     float: right;
     margin-right: 3px;
+    margin-top: 8px;
 }
 
 aside .uk-nav .uk-active > a, aside .uk-nav .uk-open > a {
@@ -314,6 +329,15 @@ header .search {
     margin-bottom: 40px;
 }
 
+header.uk-light .search-result {
+    background-color: #222323 !important;
+    border-color: #404040;
+}
+
+header.uk-light .search-result a {
+    background-color: #101010 !important;
+}
+
 header .search .uk-search-default {
     width: 100%;
 }
@@ -352,6 +376,20 @@ header .search .uk-search-default {
 
 .search-result strong {
     font-weight: 600;
+}
+
+pre {
+    padding: 4px;
+}
+
+.uk-light pre {
+    border-color: #333;
+    background-color: #1f1f1f;
+}
+
+.uk-light .uk-alert-primary {
+    background: #091929;
+    color: #0c4277;
 }
 
 .credit {

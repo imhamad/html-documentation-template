@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <style>main {padding-right: 80px;}</style>
 </head>
 <body>
     <!-- Top header started -->
-    <header>
+    <header style="display:none">
         <!-- Left Hamburger menu, only visible in small devices  -->
         <a class="btn-left-menu" uk-icon="menu"></a>
 
@@ -148,7 +147,7 @@
                     </ul>
                 </li>
 
-                <li class="uk-parent">
+                <li class="uk-parent uk-open">
                     <a href="#"><img src="./assets/img/menu-items/basic.svg" />Basic Components</a>
                     <ul class="uk-nav-sub">
                         <li><a href="basic-components-button.html">Button</a></li>
@@ -159,7 +158,7 @@
                         <li><a href="basic-components-dropdown.html">Dropdown</a></li>
                         <li><a href="basic-components-tooltip.html">Tooltip</a></li>
                         <li><a href="basic-components-popover.html">Popover</a></li>
-                        <li><a href="basic-components-loader.html">Loader</a></li>
+                        <li class="uk-active"><a href="basic-components-loader.html">Loader</a></li>
                     </ul>
                 </li>
 
@@ -292,5 +291,6 @@
     </main>
     
     <script src="./assets/js/scripts.js"></script>
+    <style>main {padding-right: 80px;}</style>
 </body>
 </html>

@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <style>main {padding-right: 80px;}</style>
 </head>
 <body>
     <!-- Top header started -->
-    <header>
+    <header style="display:none">
         <!-- Left Hamburger menu, only visible in small devices  -->
         <a class="btn-left-menu" uk-icon="menu"></a>
 
@@ -164,13 +163,13 @@
                     </ul>
                 </li>
 
-                <li class="uk-parent">
+                <li class="uk-parent uk-open">
                     <a href="#"><img src="./assets/img/menu-items/advance.svg" />Advance Components</a>
                     <ul class="uk-nav-sub">
                         <li><a href="advance-components-code.html">Code</a></li>
                         <li><a href="advance-components-tab.html">Tabs</a></li>
                         <li><a href="advance-components-md-editor.html">MD Editor</a></li>
-                        <li><a href="advance-components-html-editor.html">HTML Editor</a></li>
+                        <li class="uk-active"><a href="advance-components-html-editor.html">HTML Editor</a></li>
                         <li><a href="advance-components-modal.html">Modal</a></li>
                         <li><a href="advance-components-accordion.html">Accordion</a></li>
                         <li><a href="advance-components-animations.html">Animations</a></li>
@@ -300,5 +299,6 @@
             });
         }
     </script>
+    <style>main {padding-right: 80px;}</style>
 </body>
 </html>

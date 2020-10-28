@@ -75,9 +75,10 @@ const scrollspyCloseHandler = async () => {
 (function() {
     const script = document.createElement('script');
     const link = document.createElement('link');
+    const loader = document.createElement('div');
 
-    script.src = './assets/js/bundle.min.js';
-    link.href = './assets/css/style.css';
+    script.src = '/assets/js/bundle.min.js';
+    link.href = '/assets/css/style.css';
     link.rel = 'stylesheet';
 
     script.onload = () => {
@@ -123,8 +124,12 @@ const scrollspyCloseHandler = async () => {
             }
         });
 
+        $('.page-loader').hide();
+        $('header').show();
     };
     
+    loader.className = 'page-loader';
+    document.body.append(loader);
     document.body.append(link);
     document.body.append(script);
 })()

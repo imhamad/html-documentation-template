@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <style>main {padding-right: 80px;}</style>
 </head>
 <body>
     <!-- Top header started -->
-    <header>
+    <header style="display:none">
         <!-- Left Hamburger menu, only visible in small devices  -->
         <a class="btn-left-menu" uk-icon="menu"></a>
 
@@ -134,14 +133,14 @@
                     </ul>
                 </li>
 
-                <li class="uk-parent">
+                <li class="uk-parent uk-open">
                     <a href="#"><img src="./assets/img/menu-items/layouts.svg" />Layouts</a>
                     <ul class="uk-nav-sub">
                         <li><a href="layouts-left-side.html">Left Side</a></li>
                         <li><a href="layouts-right-side.html">Right Side</a></li>
                         <li><a href="index.html">Both Sides</a></li>
                         <li><a href="layouts-colored-header.html">Colored Header</a></li>
-                        <li><a href="layouts-multiple-columns.html">Multiple Columns</a></li>
+                        <li class="uk-active"><a href="layouts-multiple-columns.html">Multiple Columns</a></li>
                         <li><a href="layouts-without-hash-links.html">Without Hash Links</a></li>
                         <li><a href="layouts-menu-without-icons.html">Menu Without Icons</a></li>
                         <li><a href="layouts-text-without-logo.html">Text without logo</a></li>
@@ -274,14 +273,48 @@
     </aside>
     <!-- Left sidebar ended -->
     
-    <main></main>
+    <main>
 
-    <div class="menu-btn-scrollspy">
-        Links on this page
-    </div>
+        <div class="uk-column-1-2 normal-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        </div>
 
-    <section class="scrollspy"></section>
+        <hr class="uk-divider-icon">
+
+        <div class="uk-column-1-2@s uk-column-1-3@m uk-column-1-3@l normal-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        </div>
+
+        <hr class="uk-divider-icon">
+
+        <div class="uk-column-1-2@s uk-column-1-4@m uk-column-1-4@l normal-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        </div>
+
+        <hr class="uk-divider-icon">
+
+        <div class="uk-column-1-2@s uk-column-1-5@m uk-column-1-5@l normal-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        </div>
+    </main>
     
     <script src="./assets/js/scripts.js"></script>
+    <style>main {padding-right: 80px;}</style>
 </body>
 </html>

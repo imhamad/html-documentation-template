@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <style>
-        :root {
-            --color-base: #086E80 !important;
-            --color-base-light:#086E80DD !important;
-        }
-        main {padding-right: 80px;}
-    </style>
 </head>
 <body>
     <!-- Top header started -->
-    <header>
+    <header style="display:none">
         <!-- Left Hamburger menu, only visible in small devices  -->
         <a class="btn-left-menu" uk-icon="menu"></a>
 
@@ -223,13 +216,13 @@
                     </ul>
                 </li>
 
-                <li class="uk-parent">
+                <li class="uk-parent uk-open">
                     <a href="#"><img src="./assets/img/menu-items/colors.svg" />Colors</a>
                     <ul class="uk-nav-sub">
                         <li><a href="colors-1.html">#27399A <span class="color-box" style="background: #27399A"></span></a></li>
                         <li><a href="colors-2.html">#E91E63 <span class="color-box" style="background: #E91E63"></span></a></li>
                         <li><a href="colors-3.html">#1E87F0 <span class="color-box" style="background: #1E87F0"></span></a></li>
-                        <li><a href="colors-4.html">#086E80 <span class="color-box" style="background: #086E80"></span></a></li>
+                        <li class="uk-active"><a href="colors-4.html">#086E80 <span class="color-box" style="background: #086E80"></span></a></li>
                         <li><a href="colors-5.html">#C5801A <span class="color-box" style="background: #C5801A"></span></a></li>
                     </ul>
                 </li>
@@ -283,5 +276,12 @@
     <main></main>
     
     <script src="./assets/js/scripts.js"></script>
+    <style>
+        :root {
+            --color-base: #086E80;
+            --color-base-light:#086E80DD;
+        }
+        main {padding-right: 80px;}
+    </style>
 </body>
 </html>
