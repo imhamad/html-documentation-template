@@ -10,8 +10,8 @@
 
 ## Screenshots
 
-### Home page
-<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/home-light.gif" alt="Home page gif"/>
+### Single page
+<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/single-page.gif" alt="Single page gif"/>
 
 ### Home dark page
 <img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/home-dark.gif" alt="Home dark page gif"/>

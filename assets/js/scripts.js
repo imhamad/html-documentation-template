@@ -1,4 +1,4 @@
-const assetsRootUrl = '/assets';
+const assetsRootUrl = './assets';
 
 const initGsap = (cb = null) => {
     if (window.gsap && cb) {
