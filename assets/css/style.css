@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Roboto+Mono:400");
+
 :root {
     --color-base: #673ab7;
     --color-base-light: #673ab7dd;
@@ -66,18 +68,6 @@ main > p, .normal-text p {
 
 .scrollspy + main {
     padding-right: 350px;
-}
-
-.page-loader {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background-color: var(--color-base);
-    z-index: 1001;
-    background-image: url(../img/loader.svg);
-    background-repeat: no-repeat;
-    background-size: 40% 40%;
-    background-position: center center;
 }
 
 aside {

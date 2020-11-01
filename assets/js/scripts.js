@@ -1,118 +1,112 @@
-const assetsRootUrl = './assets';
+class ZamaDoc {
+    constructor() {
+        this.isLeftMenuOpen = false;
+        this.isScrollspyOpen = false;
 
-const initGsap = (cb = null) => {
-    if (window.gsap && cb) {
-        return cb(window.gsap);
+        this.initGsap();
+        this.initCode();
+        this.appendMainMenuItemsForMobile();
+        this.attachEvents();
     }
 
-    if (window.innerWidth <= 1050 || cb) {
-        const link = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js';
-        const script = document.createElement('script');
-        script.src = link;
-        script.onload = () => {
-            if (cb) {
-                cb(window.gsap);
+    getGsap() {
+        return new Promise((res) => {
+            if (window.gsap) {
+                return res(window.gsap);
             }
-        }
-    
-        document.body.append(script);
+
+            this.initGsap((_gsap) => {
+                res(_gsap);
+            });
+        });
     }
-}
 
-const getGsap = () => new Promise((res, rej) => {
-    initGsap((_gsap) => {
-        res(_gsap);
-    });
-});
-
-const initCode = () => {
-    const code = $('pre > code');
-
-    if (!!code.length) {
-        const script = document.createElement('script');
-        const link = document.createElement('link');
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js';
-        link.href = 'https://highlightjs.org/static/demo/styles/night-owl.css';
-        link.rel = 'stylesheet';
-
-        script.onload = () => {
-            code.each(function(i, e) { hljs.highlightBlock(e); });
-        };
+    initGsap (onload) {    
+        if (window.innerWidth <= 1050 || onload) {
+            const link = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js';
+            const script = document.createElement('script');
+            script.src = link;
+            script.onload = () => {
+                if (onload) {
+                    onload(window.gsap);
+                }
+            }
         
-        document.body.append(link);
-        document.body.append(script);
-    }
-}
-
-const leftMenuOpenHandler = async () => {
-    const gsap = await getGsap();
-    gsap.to('main', {duration: 0.5, x: 320});
-    gsap.to('aside', {duration: 0.5, x: 320});
-    gsap.to('header', {duration: 0.5, x: 320});
-    window.isLeftMenuOpen = true;
-}
-
-const leftMenuCloseHandler = async () => {
-    const gsap = await getGsap();
-    gsap.to('main', {duration: 0.5, x: 0});
-    gsap.to('aside', {duration: 0.5, x: 0});
-    gsap.to('header', {duration: 0.5, x: 0});
-    window.isLeftMenuOpen = false;
-}
-
-const scrollspyOpenHandler = async () => {
-    const gsap = await getGsap();
-    gsap.to('.scrollspy', {duration: 0.5, x: -260});
-    gsap.to('.menu-btn-scrollspy', {duration: 0.5, x: -260});
-    window.isScrollspyOpen = true;
-}
-
-const scrollspyCloseHandler = async () => {
-    const gsap = await getGsap();
-    gsap.to('.scrollspy', {duration: 0.5, x: 0});
-    gsap.to('.menu-btn-scrollspy', {duration: 0.5, x: 0});
-    window.isScrollspyOpen = false;
-}
-
-(function() {
-    const script = document.createElement('script');
-    const link = document.createElement('link');
-    const link2 = document.createElement('link');
-    const loader = document.createElement('div');
-    
-    script.src = `${assetsRootUrl}/js/bundle.min.js`;
-    link.href = `${assetsRootUrl}/css/style.css`;
-    link.rel = 'stylesheet';
-    link2.href = `${assetsRootUrl}/css/bundle.min.css`;
-    link2.rel = 'stylesheet';
-
-    script.onload = () => {
-        initGsap();
-        initCode();
-
-        const appendMainMenuItemsForMobile = () => {
-            const links = $('header .links a')
-                .toArray()
-                .map(e => `<li><a href="${$(e).attr('href')}">${$(e).text()}</a></li>`);
-    
-            $('.main-menu-items').html(links);
+            document.body.append(script);
         }
+    }
+
+    initCode() {
+        const code = $('pre > code');
     
-        appendMainMenuItemsForMobile();
+        if (!!code.length) {
+            const script = document.createElement('script');
+            const link = document.createElement('link');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js';
+            link.href = 'https://highlightjs.org/static/demo/styles/night-owl.css';
+            link.rel = 'stylesheet';
     
+            script.onload = () => {
+                code.each(function(i, e) { hljs.highlightBlock(e); });
+            };
+            
+            document.body.append(link);
+            document.body.append(script);
+        }
+    }
+
+    async leftMenuOpenHandler () {
+        const gsap = await this.getGsap();
+        gsap.to('main', {duration: 0.5, x: 320});
+        gsap.to('aside', {duration: 0.5, x: 320});
+        gsap.to('header', {duration: 0.5, x: 320});
+        this.isLeftMenuOpen = true;
+    }
+
+    async leftMenuCloseHandler() {
+        const gsap = await this.getGsap();
+        gsap.to('main', {duration: 0.5, x: 0});
+        gsap.to('aside', {duration: 0.5, x: 0});
+        gsap.to('header', {duration: 0.5, x: 0});
+        this.isLeftMenuOpen = false;
+    }
+
+    async scrollspyOpenHandler() {
+        const gsap = await this.getGsap();
+        gsap.to('.scrollspy', {duration: 0.5, x: -260});
+        gsap.to('.menu-btn-scrollspy', {duration: 0.5, x: -260});
+        this.isScrollspyOpen = true;
+    }
+
+    async scrollspyCloseHandler() {
+        const gsap = await this.getGsap();
+        gsap.to('.scrollspy', {duration: 0.5, x: 0});
+        gsap.to('.menu-btn-scrollspy', {duration: 0.5, x: 0});
+        this.isScrollspyOpen = false;
+    }
+
+    appendMainMenuItemsForMobile() {
+        const links = $('header .links a')
+            .toArray()
+            .map(e => `<li><a href="${$(e).attr('href')}">${$(e).text()}</a></li>`);
+
+        $('.main-menu-items').html(links);
+    }
+
+    attachEvents() {
         $('.btn-left-menu').click(() => {
-            if (window.isLeftMenuOpen) {
-                leftMenuCloseHandler();
+            if (this.isLeftMenuOpen) {
+                this.leftMenuCloseHandler();
             } else {
-                leftMenuOpenHandler();
+                this.leftMenuOpenHandler();
             }
         });
     
         $('.menu-btn-scrollspy').click(() => {
-            if (window.isScrollspyOpen) {
-                scrollspyCloseHandler();
+            if (this.isScrollspyOpen) {
+                this.scrollspyCloseHandler();
             } else {
-                scrollspyOpenHandler();
+                this.scrollspyOpenHandler();
             }
         });
 
@@ -128,14 +122,7 @@ const scrollspyCloseHandler = async () => {
                 $('.search-result').hide()
             }
         });
+    }
+}
 
-        $('.page-loader').hide();
-        $('header').show();
-    };
-    
-    loader.className = 'page-loader';
-    document.body.append(loader);
-    document.body.append(link2);
-    document.body.append(link);
-    document.body.append(script);
-})()
+new ZamaDoc();

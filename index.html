@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
     <title></title>
 </head>
 <body>
     <!-- Top header started -->
-    <header style="display:none">
+    <header>
         <!-- Left Hamburger menu, only visible in small devices  -->
         <a class="btn-left-menu" uk-icon="menu"></a>
 
@@ -78,7 +80,6 @@
             <ul class="uk-nav-default uk-nav-parent-icon" uk-nav uk-scrollspy-nav="closest: li; scroll: true">
                 <li><a href="#overview"># Overview</a></li>
                 <li><a href="#article-2"># Mandatory files</a></li>
-                <li><a href="#article-1"># First thing first</a></li>
                 <li><a href="#article-3"># Where to start</a></li>
                 <li><a href="#article-4"># How to use the dark theme</a></li>
                 <li><a href="#article-5"># How to change the base color</a></li>
@@ -126,35 +127,6 @@
 
         <div class="uk-margin-large-top"></div>
 
-        <h3 id="article-2"><a href="#article-2">First thing first</a></h3>
-        <p>
-            If you want to change the order of the <code>assets</code> folder, move the <code>assets</code> folder to another place or if the assets folder is not in the same folder with the HTML file then you have to set the <code>assetsRootUrl</code> in the <code>assets/js/script.js</code> to the root URL of the <code>assets</code> folder.
-        </p>
-        <p>Like you placed the assets folder inside the public folder and the file tree is like below:</p>
-        <pre>
-
-    -> public
-        -> assets
-            -> js
-            -> css
-            -> img
-
-    -> index.html
-        </pre>
-        <p>Then open the <code>assets/js/script.js</code> and change the <code>assetsRootUrl</code> like below:</p>
-        <pre><code class="javascript">
-    // current value in the file
-    const assetsRootUrl = '/assets';
-
-    // change the value according to the new path
-    const assetsRootUrl = '/public/assets';
-
-    // or you can also set the full url path
-    const assetsRootUrl = 'https://link-to-site.com/public/assets';
-        </code></pre>
-
-        <div class="uk-margin-large-top"></div>
-
         <h3 id="article-3"><a href="#article-3">Where to start</a></h3>
         <p>Following is the single sidebar (left) structure </p>
         
@@ -164,6 +136,8 @@
     &lt;head&gt;
         &lt;meta charset="UTF-8"&gt;
         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;link src="./assets/css/bundle.min.css" rel="stylesheet" &gt;
+        &lt;link src="./assets/css/style.css" rel="stylesheet" &gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;header&gt;
@@ -187,6 +161,7 @@
         &lt;!-- Main content --&gt;
         &lt;main&gt;&lt;/main&gt;
     
+        &lt;script src="./assets/js/bundle.min.js"&gt;&lt;/script&gt;
         &lt;script src="./assets/js/scripts.js"&gt;&lt;/script&gt;
     &lt;/body&gt;
     &lt;/html&gt;
@@ -200,6 +175,8 @@
     &lt;head&gt;
         &lt;meta charset="UTF-8"&gt;
         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;link src="./assets/css/bundle.min.css" rel="stylesheet" &gt;
+        &lt;link src="./assets/css/style.css" rel="stylesheet" &gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;header&gt;
@@ -231,6 +208,7 @@
         &lt;!-- Main content --&gt;
         &lt;main&gt;&lt;/main&gt;
     
+        &lt;script src="./assets/js/bundle.min.js"&gt;&lt;/script&gt;
         &lt;script src="./assets/js/scripts.js"&gt;&lt;/script&gt;
     &lt;/body&gt;
     &lt;/html&gt;
@@ -288,6 +266,7 @@
         <p>Created by <a href="https://asfand-dev.github.io">Asfand</a> with <span uk-icon="heart" style="color:#E91E63"></span></p>
     </main>
     
+    <script src="./assets/js/bundle.min.js"></script>
     <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
