@@ -10,17 +10,14 @@
 
 ## Screenshots
 
-### Single page
-<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/single-page.gif" alt="Single page gif"/>
+### Home page
+<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/home-light.gif" alt="Home page gif"/>
 
 ### Home dark page
 <img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/home-dark.gif" alt="Home dark page gif"/>
 
 ### Advance components page</p>
 <img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/advance-component.gif" alt="Advance components page gif"/>
-
-### Basic components page</p>
-<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/basic-component.gif" alt="baic components page gif"/>
 
 ### API page</p>
 <img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/api-page.gif" alt="API page gif"/>
