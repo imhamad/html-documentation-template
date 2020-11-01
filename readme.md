@@ -11,19 +11,22 @@
 ## Screenshots
 
 ### Home page
-<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/home-light.gif" alt="Home page gif"/>
+<img src="./assets/gifs/home-light.gif" alt="Home page" width="600px" />
 
-### Home dark page
-<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/home-dark.gif" alt="Home dark page gif"/>
+### Home-dark page
+<img src="./assets/gifs/home-dark.gif" alt="Home page dark" width="600px" />
 
 ### Advance components page</p>
-<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/advance-component.gif" alt="Advance components page gif"/>
+<img src="./assets/gifs/advance-component.gif" alt="Advance components page" width="600px" />
 
 ### API page</p>
-<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/api-page.gif" alt="API page gif"/>
+<img src="./assets/gifs/api-page.gif" alt="API page" width="600px" />
 
 ### Mobile View</p>
-<img style="width: 300px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/mobile-view.gif" alt="Mobile view gif"/>
+<img src="./assets/gifs/mobile-view.gif" alt="Mobile view" width="300px" />
 
 ### Search page</p>
-<img style="width: 100%; max-width:600px;" src="https://cdn.jsdelivr.net/npm/zama@0.0.1/packages/zama-doc/gifs/search.gif" alt="Search page gif"/>
+<img src="./assets/gifs/search.gif" alt="Search page" width="600px" />
+
+### Basic components page</p>
+<img src="./assets/gifs/basic-component.gif" alt="Basic components page" width="600px" />
