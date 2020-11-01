@@ -521,21 +521,24 @@ pre {
     padding-left: 10px;
 }
 
-.uk-alert-icon {
+.uk-alert {
     padding: 10px 8px 10px 40px;
 }
 
-.uk-alert-icon .uk-icon {
+.uk-alert .uk-icon {
     position: absolute;
     top: 14px;
     left: 10px;
 }
 
-.uk-alert-icon p {
+.uk-alert p {
     font-size: 16px;
     margin-top: 0;
 }
 
+.uk-alert p:empty {
+    display: none;
+}
 
 header.uk-light {
     border-bottom: 1px solid #969696;
@@ -692,5 +695,9 @@ aside.dark {
         content: "#";
         position: absolute;
         color: #999;
+    }
+
+    main .buttons h3 > a:before {
+        content: "";
     }
 }

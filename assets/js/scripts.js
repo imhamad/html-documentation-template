@@ -1,4 +1,5 @@
 const assetsRootUrl = '/assets';
+
 const initGsap = (cb = null) => {
     if (window.gsap && cb) {
         return cb(window.gsap);
@@ -78,7 +79,7 @@ const scrollspyCloseHandler = async () => {
     const link = document.createElement('link');
     const link2 = document.createElement('link');
     const loader = document.createElement('div');
-
+    
     script.src = `${assetsRootUrl}/js/bundle.min.js`;
     link.href = `${assetsRootUrl}/css/style.css`;
     link.rel = 'stylesheet';
